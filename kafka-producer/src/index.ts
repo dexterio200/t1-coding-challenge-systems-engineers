@@ -32,7 +32,7 @@ function onMessage(message: RawMessage) {
         message.messageType,
         null,
         Buffer.from(JSON.stringify(message)),
-        null,
+        message.messageType === 'market' ? message.endTime : message.time,
         Date.now()
     );
 }
