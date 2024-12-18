@@ -38,6 +38,7 @@ services:
       - "3001:3001"
     depends_on:
       - kafka-producer
+      - database
 
   calculation-service:
     container_name: t1-coding-challenge-calculation-service

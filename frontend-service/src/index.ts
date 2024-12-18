@@ -1,4 +1,5 @@
 import { app } from "./api";
+import './db';
 
 // const gracefulShutdown = () => {
 //   client.close()
